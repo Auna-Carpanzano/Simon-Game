@@ -1,3 +1,7 @@
+const red = "red";
+const blue = "blue";
+const yellow = "yellow";
+const green = "green";
 var redSound = $("#redSound")[0];
 var blueSound = $("#blueSound")[0];
 var yellowSound = $("#yellowSound")[0];
