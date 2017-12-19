@@ -15,6 +15,7 @@ body {
   float: left;
   outline: none;
   border: none;
+  border-radius: 5px;
 }
 
 .selected {
