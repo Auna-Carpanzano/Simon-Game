@@ -68,3 +68,9 @@ body {
 .strictMode {
   background-color: red;
 }
+
+#reset, #strict {
+  width: 45%;
+  margin: 2.5%;
+  float: left;
+}
