@@ -10,11 +10,21 @@ var simonSteps = [];
 var step = 0;
 
 function nextStep(){
-  var nextColor = [red, blue, yellow, green][Math.floor(Math.random() * 4)];
-  console.log("random color", nextColor);
-  simonSteps.push(nextColor);
-  console.log("simonSteps", simonSteps);
-  console.log("step", step);
+  //Game won if player gets 3 steps correct
+  if(simonSteps.length===3){
+    alert("You win!");
+    simonSteps=[];
+    step= 0;
+    $("#count").html(0);
+    startGame();
+  }
+  else{
+    var nextColor = [red, blue, yellow, green][Math.floor(Math.random() * 4)];
+    console.log("random color", nextColor);
+    simonSteps.push(nextColor);
+    console.log("simonSteps", simonSteps);
+    console.log("step", step);
+  }
 }
 
 function startGame(){
@@ -23,7 +33,7 @@ function startGame(){
 
 function sendColor(color){
   //If the correct color is selected
-  if(color==simonSteps[step]){
+  if(color===simonSteps[step]){
     //If the sequence is completed
     if(step===simonSteps.length-1){
       step=0;
@@ -40,7 +50,6 @@ function sendColor(color){
   else {
     alert("You lose!");
     simonSteps=[];
-    playerSteps=[];
     step= 0;
     $("#count").html(0);
     startGame();
@@ -48,7 +57,7 @@ function sendColor(color){
 }
 
 $(document).ready(function(){
-startGame();
+  startGame();
 
   $("#red").click(function(){
     redSound.play();
