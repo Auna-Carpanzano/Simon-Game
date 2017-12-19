@@ -87,7 +87,7 @@ function sendColor(color){
     }
   }
   //Wrong color for strict mode
-  else if($('input[type=checkbox]').prop('checked')){
+  else if($("#strict").hasClass('strictMode')){
     alert("You lose!");
     startGame();
   }
@@ -128,6 +128,10 @@ $(document).ready(function(){
 
   $("#reset").click(function(){
     startGame();
+  });
+
+  $("#strict").click(function(){
+    $("#strict").toggleClass("strictMode");
   });
 
 });
