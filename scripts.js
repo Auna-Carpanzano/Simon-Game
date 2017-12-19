@@ -42,6 +42,24 @@ function clearPlayer(){
   playerSteps = [];
 }
 
+function makeSimonSounds(colors){
+  if(colors === red){
+    redSound.play();
+  }
+  if(colors === blue){
+    blueSound.play();
+  }
+  if(colors === yellow){
+    yellowSound.play();
+  }
+  if(colors === green){
+    greenSound.play();
+  }
+  setTimeout(function(){
+
+  }, 300);
+}
+
 function startGame(){
   step=0;
   simonSteps = [];
