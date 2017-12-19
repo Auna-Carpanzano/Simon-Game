@@ -96,6 +96,7 @@ function sendColor(color){
     alert("Try again!");
     playerSteps= [];
     step= 0;
+    simonSounds();
   }
 }
 
