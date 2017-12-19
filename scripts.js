@@ -53,8 +53,7 @@ function sendColor(color){
   }
   //Not strict mode- wrong color
   else {
-    alert("!!!");
-    startGame();
+    alert("Try again!");
   }
 }
 
