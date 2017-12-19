@@ -13,9 +13,6 @@ function nextStep(){
   //Game won if player gets 3 steps correct
   if(simonSteps.length===3){
     alert("You win!");
-    simonSteps=[];
-    step= 0;
-    $("#count").html(0);
     startGame();
   }
   else{
@@ -28,6 +25,9 @@ function nextStep(){
 }
 
 function startGame(){
+  step=0;
+  simonSteps = [];
+  $("#count").html(1);
   nextStep();
 }
 
@@ -49,9 +49,6 @@ function sendColor(color){
   //If the correct color is not selected
   else {
     alert("You lose!");
-    simonSteps=[];
-    step= 0;
-    $("#count").html(0);
     startGame();
   }
 }
@@ -80,9 +77,6 @@ $(document).ready(function(){
   });
 
   $("#reset").click(function(){
-    step=0;
-    simonSteps = [];
-    $("#count").html(1);
     startGame();
   });
 
