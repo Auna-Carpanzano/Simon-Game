@@ -57,7 +57,7 @@ body {
 }
 
 .strictMode {
-  background-color: red;
+  background-color: rgb(231, 76, 60);
 }
 
 #reset, #strict, #count {
