@@ -14,3 +14,9 @@
 .selected {
   background-color: red;
 }
+
+#count {
+  clear: both;
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
