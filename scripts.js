@@ -60,6 +60,7 @@ function makeSimonSounds(colors){
     $("#green").addClass('selected');
   }
   setTimeout(function(){
+    $("button").removeClass('selected');
   }, 300);
 }
 
