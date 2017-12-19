@@ -22,17 +22,6 @@ body {
   opacity: 0.5;
 }
 
-#count {
-  clear: both;
-  background-color: rgb(20, 20, 20);
-  color: white;
-  width: 65px;
-  height: 30px;
-  margin: auto;
-  border-radius: 5px;
-  padding-top: 14px;
-}
-
 #red {
   background-color: rgb(192, 57, 43);
 }
@@ -69,11 +58,16 @@ body {
   background-color: red;
 }
 
-#reset, #strict {
-  width: 45%;
-  margin: 2.5%;
+#reset, #strict, #count {
+  width: 30%;
+  margin: 1.66%;
   float: left;
   outline: none;
   border: none;
   border-radius: 5px;
+}
+
+#count {
+  background-color: rgb(20, 20, 20);
+  color: white;
 }
