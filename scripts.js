@@ -11,7 +11,7 @@ var playerSteps = [];
 var step = 0;
 
 function nextStep(){
-  //Game won if player gets 3 steps correct
+  //Check if game won-player gets 3 steps correct
   if(simonSteps.length===3){
     alert("You win!");
     startGame();
@@ -22,7 +22,20 @@ function nextStep(){
     simonSteps.push(nextColor);
     console.log("simonSteps", simonSteps);
     console.log("step", step);
+    simonSounds();
   }
+}
+
+function simonSounds(){
+  var i=0;
+  var moves= setInterval(function(){
+    makeSimonSounds(simonSteps[i]);
+    i++;
+    if(i >= simonSteps.length){
+      clearInterval(moves);
+    }
+  }, 600)
+  clearPlayer();
 }
 
 function startGame(){
