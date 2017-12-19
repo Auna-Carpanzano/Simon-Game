@@ -45,18 +45,21 @@ function clearPlayer(){
 function makeSimonSounds(colors){
   if(colors === red){
     redSound.play();
+    $("#red").addClass('selected');
   }
   if(colors === blue){
     blueSound.play();
+    $("#blue").addClass('selected');
   }
   if(colors === yellow){
     yellowSound.play();
+    $("#yellow").addClass('selected');
   }
   if(colors === green){
     greenSound.play();
+    $("#green").addClass('selected');
   }
   setTimeout(function(){
-
   }, 300);
 }
 
