@@ -38,6 +38,10 @@ function simonSounds(){
   clearPlayer();
 }
 
+function clearPlayer(){
+  playerSteps = [];
+}
+
 function startGame(){
   step=0;
   simonSteps = [];
