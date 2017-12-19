@@ -46,9 +46,14 @@ function sendColor(color){
       step++;
     }
   }
-  //If the correct color is not selected
-  else {
+  //Strict mode- wrong color
+  else if($('input[type=checkbox]').prop('checked')){
     alert("You lose!");
+    startGame();
+  }
+  //Not strict mode- wrong color
+  else {
+    alert("!!!");
     startGame();
   }
 }
