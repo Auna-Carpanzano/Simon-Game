@@ -94,7 +94,6 @@ function sendColor(color){
   //Wrong color for non-strict mode
   else {
     alert("Try again!");
-    playerSteps= [];
     step= 0;
     simonSounds();
   }
