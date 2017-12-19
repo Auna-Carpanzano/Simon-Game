@@ -64,3 +64,7 @@ body {
 #green:active {
   opacity: 0.5;
 }
+
+.strictMode {
+  background-color: red;
+}
