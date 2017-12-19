@@ -33,9 +33,9 @@ function startGame(){
 }
 
 function sendColor(color){
-  //If the correct color is selected
+  //Correct color
   if(color===simonSteps[step]){
-    //If the sequence is completed
+    //Sequence complete
     if(step===simonSteps.length-1){
       step=0;
       nextStep();
@@ -43,16 +43,16 @@ function sendColor(color){
       $("#count").append(simonSteps.length);
     }
     else {
-      //If the sequence is not completed
+      //Sequence not complete
       step++;
     }
   }
-  //Strict mode- wrong color
+  //Wrong color for strict mode
   else if($('input[type=checkbox]').prop('checked')){
     alert("You lose!");
     startGame();
   }
-  //Not strict mode- wrong color
+  //Wrong color for non-strict mode
   else {
     alert("Try again!");
     playerSteps= [];
