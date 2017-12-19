@@ -53,3 +53,7 @@
 #green {
   background-color: rgb(39, 174, 96);
 }
+
+#green:active {
+  background-color: rgb(46, 204, 113);
+}
