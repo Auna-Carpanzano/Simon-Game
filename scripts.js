@@ -79,4 +79,11 @@ $(document).ready(function(){
     sendColor(green);
   });
 
+  $("#reset").click(function(){
+    step=0;
+    simonSteps = [];
+    $("#count").html(1);
+    startGame();
+  });
+
 });
