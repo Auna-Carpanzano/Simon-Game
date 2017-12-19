@@ -11,8 +11,8 @@ var playerSteps = [];
 var step = 0;
 
 function nextStep(){
-  //Check if game won-player gets 3 steps correct
-  if(simonSteps.length===3){
+  //Check if game won-player gets 20 steps correct
+  if(simonSteps.length===20){
     alert("You win!");
     startGame();
   }
