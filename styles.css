@@ -22,4 +22,6 @@
   width: 65px;
   height: 30px;
   margin: auto;
+  border-radius: 5px;
+  padding-top: 14px;
 }
