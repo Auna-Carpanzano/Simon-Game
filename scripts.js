@@ -7,6 +7,7 @@ var blueSound = $("#blueSound")[0];
 var yellowSound = $("#yellowSound")[0];
 var greenSound = $("#greenSound")[0];
 var simonSteps = [];
+var playerSteps = [];
 var step = 0;
 
 function nextStep(){
@@ -62,21 +63,25 @@ $(document).ready(function(){
 
   $("#red").click(function(){
     redSound.play();
+    playerSteps.push(red);
     sendColor(red);
   });
 
   $("#blue").click(function(){
     blueSound.play();
+    playerSteps.push(blue);
     sendColor(blue);
   });
 
   $("#yellow").click(function(){
     yellowSound.play();
+    playerSteps.push(yellow);
     sendColor(yellow);
   });
 
   $("#green").click(function(){
     greenSound.play();
+    playerSteps.push(green);
     sendColor(green);
   });
 
