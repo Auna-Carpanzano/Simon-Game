@@ -25,3 +25,7 @@
   border-radius: 5px;
   padding-top: 14px;
 }
+
+#red {
+  background-color: rgb(192, 57, 43);
+}
