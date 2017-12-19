@@ -55,6 +55,8 @@ function sendColor(color){
   //Not strict mode- wrong color
   else {
     alert("Try again!");
+    playerSteps= [];
+    step= 0;
   }
 }
 
