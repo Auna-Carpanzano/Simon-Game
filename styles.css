@@ -4,6 +4,11 @@
   margin: 100px auto;
 }
 
+.colorButtons {
+  width: 45%;
+  height: 100px;
+}
+
 .selected {
   background-color: red;
 }
