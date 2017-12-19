@@ -46,6 +46,10 @@
   background-color: rgb(243, 156, 18);
 }
 
+#yellow:active {
+  background-color: rgb(241, 196, 15);
+}
+
 #green {
   background-color: rgb(39, 174, 96);
 }
