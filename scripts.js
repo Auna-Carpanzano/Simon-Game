@@ -13,7 +13,10 @@ var step = 0;
 function nextStep(){
   //Check if game won-player gets 20 steps correct
   if(simonSteps.length===20){
-    alert("You win!");
+    $("h1").text("You win!");
+    setTimeout(function(){
+      $("h1").text("");
+    }, 600);
     startGame();
   }
   else{
@@ -85,12 +88,18 @@ function sendColor(color){
   }
   //Wrong color for strict mode
   else if($("#strict").hasClass('strictMode')){
-    alert("You lose!");
+    $("h1").text("You lose!");
+    setTimeout(function(){
+      $("h1").text("");
+    }, 600);
     startGame();
   }
   //Wrong color for non-strict mode
   else {
-    alert("Try again!");
+    $("h1").text("Try again!");
+    setTimeout(function(){
+      $("h1").text("");
+    }, 600);
     step= 0;
     simonSounds();
   }

@@ -10,6 +10,13 @@ body {
   margin: 100px auto;
 }
 
+h1 {
+  height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
+}
+
 .colorButtons {
   width: 45%;
   height: 100px;
@@ -18,6 +25,7 @@ body {
   outline: none;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .selected {
@@ -70,6 +78,10 @@ body {
   border-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+}
+
+#reset, #strict {
+  cursor: pointer;
 }
 
 #count {
