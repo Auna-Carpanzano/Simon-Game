@@ -18,10 +18,7 @@ function nextStep(){
   }
   else{
     var nextColor = [red, blue, yellow, green][Math.floor(Math.random() * 4)];
-    console.log("random color", nextColor);
     simonSteps.push(nextColor);
-    console.log("simonSteps", simonSteps);
-    console.log("step", step);
     simonSounds();
   }
 }
@@ -87,7 +84,7 @@ function sendColor(color){
     }
   }
   //Wrong color for strict mode
-  else if($('input[type=checkbox]').prop('checked')){
+  else if($("#strict").hasClass('strictMode')){
     alert("You lose!");
     startGame();
   }
@@ -128,6 +125,10 @@ $(document).ready(function(){
 
   $("#reset").click(function(){
     startGame();
+  });
+
+  $("#strict").click(function(){
+    $("#strict").toggleClass("strictMode");
   });
 
 });

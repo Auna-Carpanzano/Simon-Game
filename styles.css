@@ -1,3 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background-color: rgb(40, 40, 40);
+}
+
+#container {
+  text-align: center;
+  width: 50%;
+  margin: 100px auto;
+}
+
+.colorButtons {
+  width: 45%;
+  height: 100px;
+  margin: 2.5%;
+  float: left;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
 .selected {
-  background-color: red;
+  opacity: 0.3;
+}
+
+#red {
+  background-color: rgb(192, 57, 43);
+}
+
+#red:active {
+  opacity: 0.3;
+}
+
+#blue {
+  background-color: rgb(41, 128, 185);
+}
+
+#blue:active {
+  opacity: 0.3;
+}
+
+#yellow {
+  background-color: rgb(243, 156, 18);
+}
+
+#yellow:active {
+  opacity: 0.3;
+}
+
+#green {
+  background-color: rgb(39, 174, 96);
+}
+
+#green:active {
+  opacity: 0.3;
+}
+
+.strictMode {
+  background-color: rgb(231, 76, 60);
+}
+
+#reset, #strict, #count {
+  width: 30%;
+  height: 35px;
+  margin: 1.66%;
+  float: left;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+#count {
+  background-color: rgb(20, 20, 20);
+  color: rgb(236, 240, 241);
+  font-size: 32px;
+}
+
+@media screen and (max-width: 380px){
+  #reset, #strict {
+    font-size: 12px;
+  }
 }
