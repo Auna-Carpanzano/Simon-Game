@@ -91,6 +91,9 @@ function sendColor(color){
   //Wrong color for non-strict mode
   else {
     $("h1").text("Try again!");
+    setTimeout(function(){
+      $("h1").text("");
+    }, 600);
     step= 0;
     simonSounds();
   }
