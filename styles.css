@@ -12,6 +12,9 @@ body {
 
 h1 {
   height: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: normal;
 }
 
 .colorButtons {
