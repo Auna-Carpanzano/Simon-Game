@@ -85,7 +85,7 @@ function sendColor(color){
   }
   //Wrong color for strict mode
   else if($("#strict").hasClass('strictMode')){
-    alert("You lose!");
+    $("h1").text("You lose!");
     startGame();
   }
   //Wrong color for non-strict mode
