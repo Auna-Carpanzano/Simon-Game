@@ -14,6 +14,9 @@ function nextStep(){
   //Check if game won-player gets 20 steps correct
   if(simonSteps.length===20){
     $("h1").text("You win!");
+    setTimeout(function(){
+      $("h1").text("");
+    }, 600);
     startGame();
   }
   else{
