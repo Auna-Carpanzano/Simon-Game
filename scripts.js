@@ -90,7 +90,7 @@ function sendColor(color){
   }
   //Wrong color for non-strict mode
   else {
-    alert("Try again!");
+    $("h1").text("Try again!");
     step= 0;
     simonSounds();
   }
